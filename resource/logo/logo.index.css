@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #222;
+}
+
+body::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(#08ff12, #0791ff);
+    z-index: 10;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+}
+
+.circle{
+    /*position: relative;*/
+    width: 500px;
+    height: 500px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px #fff5, 0 0 0 20px #333, 0 0 0 22px #fff, 0 0 50px #fff, 0 0 450px #fff;
+
+}
+
+.circle::before{
+    position: absolute;
+    width: 2px;
+    height: 170px;
+    border-radius: 2px;
+    background: linear-gradient(0deg, transparent, #fff);
+    transform-origin: bottom;
+}
+
+h1{
+    font-family: 'Rubik Wet Paint';
+    color: #fff;
+    font-size: 150px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.circle p{
+    text-align: center;
+}
+
+p{
+    /*position: absolute;
+    top: 10px;*/
+    list-style-type: none;
+    transform-origin: 0 230px;
+    /*transform: rotate(calc(28deg * var(--i)));*/
+    font-size: 2.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 10px;
+}
+
+ul li span{
+    display: inline-block;
+    color: #fff;
+    /*transform: rotate(calc(-25deg * var(--i)));*/
+    text-shadow: 0 0 15px #fff, 0 0 35px #fff, 0 0 75px #fff, 0 0 150px #fff;
+}

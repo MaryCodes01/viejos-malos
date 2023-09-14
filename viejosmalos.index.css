@@ -1,0 +1,231 @@
+body{
+    font-size: 16px;
+    font-family: 'Russo One';
+    text-align: center;
+}
+
+h2{
+    font-size: 4rem;
+    margin: 150px;
+}
+
+h3{
+    font-size: 3rem;
+}
+
+h4{
+    font-size: 2rem;
+    
+}
+
+p{
+    font-size: 1.765rem;
+    line-height: 2;
+    word-spacing: 1;
+    margin: 100px 300px 0 800px;
+
+}
+
+/*Header*/
+#content{
+    width: 100%;
+    height: 110px;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    background-color: #A7B688;
+    z-index: 10;
+    margin: 0;
+    padding: 0;
+}
+
+#content nav ul{
+    width: 100%;
+    list-style: none;
+    margin: 10px 15px 25px 2000px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    flex-grow: 1;    
+    gap: 1em;
+}
+
+#content li{
+    margin-top: 20px;
+    width: 300px;
+}
+
+#content a{
+    font-size: 1.675rem;
+    text-decoration: none;
+    width: 400px;
+    margin-right: 15%;
+    text-align: center;
+}
+
+/*Laptap + view*/
+
+@media only screen and (max-width: 1300px){
+    #content nav ul{
+        margin: 10px 25000px 25px 500px;
+        gap: .25em;
+    }
+    
+    #content li{
+        margin-top: 20px;
+        width: 50px;
+    }
+        
+    #content a{
+        font-size: 1.5rem;
+        width: 8px;
+        margin-right: 5%;
+    }
+           
+}
+
+/*Tablet View*/
+
+
+/*Small Tablet and/or Smart phone*/
+
+
+/*Logo*/
+
+#content .logo{
+    width: 100px;
+    height: 100px;
+    margin-left: 35px;
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(#1B6F1B, #02D9E3, #120AFA);
+    z-index: 10;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+}
+
+.logo h3{
+    font-size: 1.675rem;
+    font-family: 'Rubik Wet paint';
+    margin-bottom: 0;
+}
+
+.logo h4{
+    font-size: 10px;
+    margin-top: 0;
+}
+
+/*Tablet View*/
+@media only screen and (max-width: 600px){
+#content .logo{
+    width: 80px;
+    height: 80px;
+    margin-left: 5px;
+    border-radius: 50%;
+}
+    
+.logo h3{
+    font-size: 1.25rem;
+    font-family: 'Rubik Wet paint';
+    margin-bottom: 0;
+}
+    
+.logo h4{
+    font-size: .65rem;
+    margin-top: 0;
+}
+    
+}
+
+/*Mobile Navigation*/
+.mobile{
+    display: none;
+}
+
+/*Gallery*/
+
+.flex-box .gallery{
+    width: 100%;
+    height: 1000px;
+    margin: 0 150px;
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+}
+
+.gallery.image{
+    height: 800px;
+    width: auto;
+}
+
+/*Desktop View*/
+
+@media only screen and (max-width: 1390px){
+.flex-box .gallery{
+    margin: 0;
+    gap: 0em;
+}
+    
+.gallery.image{
+    height: 800px;
+    width: auto;
+    margin: 0;
+}
+              
+}
+
+/*Monthly Blog*/
+.blog{
+    padding-top: 60%;
+}
+
+.blog img{
+    width: 550px;
+    height: auto;
+    float: left;
+}
+
+.blog div{
+    width: 100%;
+    height: 700px;
+
+}
+
+.one h3{
+    margin: 100px;
+}
+
+/*NEED TO ADJUST HOW IT IS VIEWED ON DIFFERENT SCREENS*/
+
+/*Small laptop view*/
+@media only screen and (max-width: 1030px){
+.four{
+    margin: 0;
+    background-color: #02D9E3;
+}
+
+}
+
+/*Plan Ahead*/
+.plan-ahead{
+    margin-top: 10%;
+}
+
+.alert{
+    background-color: #ff0000;
+    color: #ffffff;
+    width: 250px;
+    height: auto;
+    padding: 50px;
+    border-radius: 35px;
+    display: block;
+}
+
+/*NEED TO ADJUST HOW IT IS VIEWED ON DIFFERENT SCREENS*/
+/*Laptop View*/
+@media only screen and (max-width: 1100px){
+.plan-ahead .alert{
+    margin-top: 500px;
+}
+    
+}

@@ -1,0 +1,77 @@
+body{
+    font-size: 16px;
+    font-family: 'Russo One';
+    text-align: center;
+}
+
+h2{
+    font-size: 4rem;
+    margin: 150px;
+}
+
+h3{
+    font-size: 3rem;
+}
+
+h4{
+    font-size: 2rem;
+}
+
+p{
+    font-size: 1.765rem;
+    line-height: 2;
+    word-spacing: 1;
+    margin: 100px 300px 0 800px;
+}
+
+/*Logo*/
+
+#content .logo{
+    width: 100px;
+    height: 100px;
+    margin-left: 35px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: linear-gradient(#1B6F1B, #02D9E3, #120AFA);
+    z-index: 10;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+}
+
+/*Header*/
+
+#content{
+    width: 100px;
+    height: 110px;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    background-color: #A7B688;
+    z-index: 10;
+    margin: 0;
+    padding: 0;
+}
+
+#content nav ul{
+    width: 100%;
+    list-style: none;
+    margin: 10px 15px 25px 350px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    flex-grow: 1;
+    gap: 1em;
+}
+
+#content li{
+    margin-top: 20px;
+    width: 300px;
+}
+
+#content a{
+    font-size: 1.675rem;
+    text-decoration: none;
+    width: 400px;
+    margin-right: 15%;
+    text-align: center;
+}
