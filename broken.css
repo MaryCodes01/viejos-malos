@@ -32,12 +32,45 @@ p{
     margin-left: 35px;
     position: absolute;
     border-radius: 50%;
-    background-color: linear-gradient(#1B6F1B, #02D9E3, #120AFA);
+    background: linear-gradient(#1B6F1B, #02D9E3, #120AFA);
     z-index: 10;
     pointer-events: none;
     mix-blend-mode: multiply;
 }
 
+.logo h3{
+    font-size: 1.675rem;
+    font-family: 'Rubik Wet paint';
+    margin-bottom: 0;
+}
+
+.logo h4{
+    font-size: 10px;
+    margin-top: 0;
+}
+
+/*Tablet View*/
+@media only screen and (max-width: 600px){
+    #content .logo{
+        width: 80px;
+        height: 80px;
+        margin-left: 5px;
+        border-radius: 50%;
+    }
+        
+    .logo h3{
+        font-size: 1.25rem;
+        font-family: 'Rubik Wet paint';
+        margin-bottom: 0;
+    }
+        
+    .logo h4{
+        font-size: .65rem;
+        margin-top: 0;
+    }
+        
+    }
+    
 /*Header*/
 
 #content{
@@ -75,3 +108,6 @@ p{
     margin-right: 15%;
     text-align: center;
 }
+
+/*Laptop + View*/
+
