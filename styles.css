@@ -32,7 +32,7 @@ header{
 
 #content div.logo{
     margin: 0;
-    display: inline-block;
+   /* display: inline-block;*/
 }
 
 #content h3{
@@ -83,7 +83,7 @@ header{
 .main-menu{
     font-size: 1.675rem;
     width: 900px;
-    display: inline-block;
+    display: flex;
 }
 
 #content .mobile{
