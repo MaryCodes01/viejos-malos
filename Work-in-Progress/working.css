@@ -1,0 +1,69 @@
+body{
+    align-items: center;
+    background-color: #000000;
+}
+
+.warning{
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    gap: 1em;
+    background-color: #ffff00;
+
+}
+
+table{
+    height: .5em;
+    width:120%;
+
+}
+
+h1{
+    height: 15%;
+    width: 100%;
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+    background-color: #ffff00;
+    padding:  0;
+    margin: 250px 0;
+
+}
+
+@media only screen and (max-width: 800px){
+        
+    .warning{
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
+        
+    table{
+        width: 100%;
+    }
+
+    h1{
+        font-size: 4rem;
+        font-weight: 700;
+        margin: 200px 0;
+    }
+    
+}
+
+@media only screen and (max-width: 600px){
+        
+    .warning{
+        font-size: 1rem;
+    }
+            
+    h1{
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .warning td.hide em{
+        display: none;
+    }        
+    
+}
