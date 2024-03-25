@@ -1,109 +1,111 @@
-html{
+/*NOTES:
+Working on gallery*/
+body{
+    width: 100%;
+    max-width: 1000px;
     font-size: 16px;
-    font-family: 'Rubik Wet Paint';
-    background-color: #454724;
+    font-family:'Russon One';
+    text-align: center;
+    line-height: 1.5;
+    background-color: #EFEEEB;
 }
 
-header{
-    width: 100%;
-    position: fixed;
-    background-color: #b5b4b1;
+h2 {
+    font-size: 1.563rem;
 }
+
+h3 {
+    font-size: 1.875rem;
+}
+
+h4 {
+    font-size: 2.44rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+/*Header*/
 
 #content{
-    display: flex;
-    align-items: center;
-    width: 100%;
-}
-
-/*Logo*/
-#content .logo{
     height: 100px;
-    width: 100px;
-    margin: 1rem 0;
-    padding: 0;
-    border-radius: 50%;
-    color: #ffffff;
-    inset: 0;
-    background: linear-gradient(#08ff12, #0791ff);
-    pointer-events: none;
-    mix-blend-mode: multiply;
-}
-
-#content div.logo{
-    margin: 0;
-   /* display: inline-block;*/
-}
-
-#content h3{
-    padding-top: 20px;
-    margin-bottom: 0;
-    text-align: center;
-}
-
-#content h4{
-    font-family: 'Russon One';
-    margin: 0;
-    text-align: center;
-}
-
-/*Desktop Navigation Bar*/
-.main-menu{
-    background-color: #08ff12;
     width: 100%;
-    height: auto;
-    margin: 0 25px;
-    padding: 0;
-    text-align: center;
+    max-width: 950px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background-color: #EFEEEB;
+    z-index: 100;
 }
 
-#content nav ul {
-    font-family: 'Russo One';
-    font-size: 1rem;
-    width: 100%;
+nav.main-menu {
+    height: 100px;
+    margin-left: 10px;
+}
+
+#content nav ul{
+    margin-left: 7%;
     list-style: none;
     display: flex;
     flex-direction: row;
-    margin-top: -50px;
-    margin-left: 5%;
+    text-align: center;
+    flex-grow: .5;    
 }
 
-#content ul li{
-    margin: 25px 0 0 0;
+#content li {
+    margin: 20px 6% 20px 0;
+    border: 5px;
 }
 
 #content a{
+    padding: 5px;
+    font-size: 1rem;
     text-decoration: none;
-    margin: 0 25px 0 0;
-    width: 10px;
-    padding: 2px 15px;
-    background-color: #0791ff;
+    color: #009A9C;
+    text-align: center;
 }
 
-.main-menu{
-    font-size: 1.675rem;
-    width: 900px;
-    display: flex;
-}
-
-#content .mobile{
+.mobile{
     display: none;
 }
 
-@media only screen and (max-width: 1330px){
-    #content .logo{
-        margin-left: 5%;
-    }
-    #content nav ul {
-        margin-top: -50px;
-        margin-left: 50%;
-    }
-            
-    #content .main-menu{
-        font-size: 1.675rem;
-        width: 900px;
-        display: inline-block;
-    }
-        
+@media only screen and (max-width: 1240px) {
+
+}
+/*Logo*/
+#content .logo{
+    width: 100px;
+    height: 100px;
+    margin-left: 1%;
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(#1B6F1B, #02D9E3, #120AFA);
+    z-index: 10;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+}
+.logo h3{
+    font-size: 2rem;
+    font-family: 'Rubik Wet paint';
+    margin-bottom: 0;
+    margin-top: 15px;
 }
 
+.logo h4{
+    font-size: .65rem;
+    margin-top: 0;
+}
+
+img {
+    width: 150px;
+    height: auto;
+}
+
+/*Working here*/
+.flex-box .gallery{
+    width: 95%;
+    height: 150px;
+    display: block;
+    margin: 50px;
+}
