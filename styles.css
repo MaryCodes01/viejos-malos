@@ -41,26 +41,27 @@ p {
 
 nav.main-menu {
     height: 100px;
-    margin-left: 10px;
+    margin-left: 5%;
+    flex-grow: 2%;
 }
 
 #content nav ul{
-    margin-left: 7%;
+    margin-left:7%;
     list-style: none;
     display: flex;
     flex-direction: row;
     text-align: center;
-    flex-grow: .5;    
+    flex-grow: 5%;    
 }
 
 #content li {
-    margin: 20px 6% 20px 0;
+    margin: 20px 2% 20px 2%;
     border: 5px;
 }
 
 #content a{
     padding: 5px;
-    font-size: 1rem;
+    font-size: 1.15rem;
     text-decoration: none;
     color: #009A9C;
     text-align: center;
@@ -70,9 +71,77 @@ nav.main-menu {
     display: none;
 }
 
-@media only screen and (max-width: 1240px) {
+/*@media for screens under 850px:TABLETS/ SML LAPTOPS
+NAVIGATION BAR*/
+@media only screen and (max-width: 850px) {
+    nav.main-menu {
+        margin-left: 1%;
+    }
+    
+    #content li {
+        margin-right: .15%;
+        margin-left: 2%;
+        border: 5px;
+    }
+    
+    #content a{
+        padding: 5px;
+        font-size: 1.15rem;
+        text-decoration: none;
+        color: #009A9C;
+        text-align: center;
+    }
+    
+}
+
+/*TABLETS AND SMART PHONE SCREEN:*/
+
+@media only screen and (max-width: 690px){
+    /*Mobile Menu*/
+    .main-menu {
+        display: none;
+    }
+    /*Trying to place arrow under 'Menu': .mobile .button .arrow
+    Need to position arrow
+    Check different widths
+    need .dropdown to only appear after arrow has been clicked on*/
+    .mobile {
+        display: block;
+        margin: 10px 50%;
+        z-index: inherit;
+        box-sizing: border-box;
+    }
+
+    .arrow {
+        width: 1.5em;
+        height: 1.5em;
+        border-radius: 0 0 0.25em 0;
+        border: #EFEEEB;
+        margin: 10px 55% 0;
+        transform: rotate(-45deg);
+        background: linear-gradient(45deg, black 50%, transparent 50%);
+        z-index: 10;
+        position: relative;
+    }
+
+    .button {
+        border: solid;
+        width: 150px;
+        height: 100px;
+        z-index: 5;
+        position: absolute;
+    }
+
+    #content nav ul{
+        margin-left:7%;
+        display: flex;
+        flex-direction: column;
+    }
+
 
 }
+
+
 /*Logo*/
 #content .logo{
     width: 100px;
